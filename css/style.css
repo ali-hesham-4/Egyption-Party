@@ -1,0 +1,246 @@
+/* S T A R T     G L O B A L    S T Y L I N G */
+:root{
+    --maiinColor: #D62E33;
+    --overlayColor: rgba(214, 46, 51, 0.6);
+    --whiteColor: white;
+    --paragraphColor:  #777;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Noto Sans", sans-serif;
+}
+
+.container {
+    padding: 100px 0px;
+}
+
+h2 , p{
+    text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1140px;
+    }
+}
+
+/* E N D     G L O B A L    S T Y L I N G */
+
+
+/* S T A R T       H O M E */
+
+
+.home{
+    background-image: url(../images/events-heavenly-header.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-size: 100% 100%;
+    height: 660px;
+}
+
+.home .homeOverlay{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlayColor);
+}
+
+.home .sideNavbar{
+    margin-left: -270px;
+    width: 250px;
+    z-index: 1;
+}
+
+.home .sideNavbar , .closeBtn{
+    color: var(--whiteColor);
+}
+
+.home .sideNavbar a, .closeBtn{
+    transition: color 0.2s;
+}
+
+.home .sideNavbar a:hover , .closeBtn:hover{
+    color: rgba(214, 46, 51, 0.4)
+}
+
+.home .sideNavbar .closeBtn{
+    font-size: 36px;
+}
+
+.home .openNav{
+    font-size: 30px;
+    color: var(--whiteColor);
+    cursor: pointer;
+    left: 10px
+}
+
+
+/* E N D       H O M E */
+
+
+/* S T A R T        D E T A I L S */
+
+.sliderDown{
+    min-height: 44vh;
+}
+
+.sliderDown h3 {
+    padding: 10px;
+    margin: 0;
+    background-color: var(--overlayColor);
+    cursor: pointer;
+    color: var(--whiteColor);
+}
+
+.sliderDown div {
+    padding: 10px;
+    background-color: #ccc;
+    display: none;
+}
+
+.sliderDown .first {
+    display: block;
+}
+
+/* E N D        D E T A I L S */
+
+
+/* <!-- S T A R T        D U R A T I O N  --> */
+
+.count {
+    background-image: url(../images/invitation-2508607__340.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.count-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlayColor);
+    color: var(--whiteColor);
+}
+
+.tim {
+    padding: 50px;
+    border: 1px solid var(--whiteColor);
+    font-weight: 500;
+    font-size: 30px;
+}
+
+/* <!-- E N D        D U R A T I O N  --> */
+
+/* S T A R T        C O N T A C T */
+
+.contact-us {
+    margin-top: 100px;
+}
+
+.contact-us .head h3 {
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #444;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-us .head p {
+    color:var(--paragraphColor);
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.contact-us .con-info h3 {
+    color: #444;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.contact-us .con-info p {
+    font-size: 16px;
+    line-height: 26px;
+    color:var(--paragraphColor);
+}
+
+.contact-us .icons {
+    margin-top: 50px;
+}
+
+.contact-us .icons p {
+    margin-bottom: 35px;
+}
+
+
+.contact-us i {
+    margin-right: 20px;
+    color:var(--paragraphColor);
+}
+
+.contact-us i {
+    margin-right: 20px;
+    color:var(--paragraphColor);
+}
+
+.contact-us .con-info .red{
+    color: var(--mainColor);
+}
+
+.contact-us .con-info .social-list {
+    margin-top: 60px;
+    color:var(--paragraphColor);
+}
+
+.contact-us .con-info .social-list i {
+    margin-right: 10px;
+    border: 1px solid #999;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contact-us .con-info .social-list i:hover {
+    color: var(--whiteColor);
+    background-color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+}
+
+.contact-us form input, .contact-us form textarea {
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+
+.contact-us form textarea {
+    height: 200px;
+    resize: vertical;
+}
+
+.chars {
+    font-size: 20px;
+    color: var(--mainColor);
+}
+
+.contact-us form button ,.contact-us form button:hover,.contact-us form button:active{
+    display: block;
+    margin-top: 20px;
+    color: var(--whiteColor);
+    background-color: var(--mainColor);
+    border-radius: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    color: var(--whiteColor);
+    background-color: var(--mainColor);
+    border-radius: 0;
+}
+
+
+/* E N D        C O N T A C T */
+
